@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
+const url = import.meta.env.VITE_BASE_URL;
 </script>
 
 <template>
   <div>
+    <a :href=url target="_blank">
+      <img src="./assets/thunder.svg" class="logo" alt="Thunder logo" />
+    </a>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
